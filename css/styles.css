@@ -4,6 +4,11 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
 }
+body {
+  background-color: var(--primary-white-color);
+  font-family: "Roboto", sans-serif;
+  color: var(--title-text-color);
+}
 .list {
   list-style: none;
 }
@@ -35,11 +40,10 @@ a {
   background-color: var(--primary-white-color);
 }
 .link {
-  font-family: Roboto;
-  font-style: Medium;
+  font-family: "Roboto";
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  line-height: 100%;
   color: var(--title-text-color);
 }
 .mail:focus,
@@ -54,19 +58,12 @@ a {
 }
 .tel,
 .mail {
-  font-family: Roboto;
-  font-style: Medium;
+  font-family: "Roboto";
   font-size: 14px;
   line-height: 1.14;
-  line-height: 100%;
   color: var(---primary-text-color);
 }
-body {
-  background-color: var(--primary-white-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  color: var(--title-text-color);
-}
+
 /*1 sektion */
 .hero {
   background-color: #2f303a;
@@ -79,10 +76,10 @@ body {
   color: var(--primary-white-color);
 }
 .button {
-  font-size: Bold;
   font-size: 16px;
   line-height: 1.88;
-  line-height: 160%;
+  font-weight: 700;
+  font-family: inherit;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -140,34 +137,38 @@ body {
 }
 .tel-footer,
 .mail-footer {
-  font-family: Roboto;
-  font-style: Medium;
+  font-family: "Roboto";
   font-size: 14px;
   line-height: 1.14;
-  line-height: 100%;
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
 .tel-footer:hover,
 .tel-footer:focus {
   color: var(--accent-color);
-  background-color: var(--primary-white-color);
 }
 .mail-footer:hover,
 .mail-footer:focus {
   color: var(--accent-color);
-  background-color: var(--primary-white-color);
 }
 
 .adres-footer {
+  font-family: "Roboto";
+  font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
+.adres-footer:hover,
+.adres-footer:focus {
+  color: var(--accent-color);
+}
 .button-portfolio {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.63;
   background-color: #f5f4fa;
 }
 .button-portfolio:focus,
@@ -178,12 +179,24 @@ body {
 /*first section*/
 .projekts {
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
 }
 .hero-projekts {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88px;
   color: var(---primary-text-color);
+}
+.caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
